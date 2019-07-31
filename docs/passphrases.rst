@@ -64,7 +64,6 @@ will require the following set of passphrases:
    -  The Hidden Service value required to connect to the Journalist
       Interface.
    -  The *Journalist Interface*.
-   -  The journalist's personal GPG key.
 
 The journalist will also need to have a two-factor authenticator, such
 as an Android or iOS device with FreeOTP installed, or a
@@ -86,3 +85,16 @@ journalist will require the following passphrases:
 The backup that is created during the installation of SecureDrop is also
 encrypted with the application's GPG key. The backup is stored on the
 persistent volume of the Admin Live USB.
+
+*Transfer Device* and *Export Device*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+As noted in the :doc:`setup guide <set_up_transfer_and_export_device>`,
+we recommend using encrypted USB drives for transferring files to and from the
+*Secure Viewing Station*.
+
+For every copy operation, the user will need to enter the USB drive's encryption
+passphrase at least twice (on the computer they're copying from, and on the
+computer they're copying to). To make it easy for them to find the passphrase,
+we recommend storing it in the journalist's own existing password manager,
+which should be accessible using their smartphone.
