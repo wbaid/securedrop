@@ -180,16 +180,17 @@ authenticator. We currently support two options for two-factor authentication:
 
 Transfer Device(s) and Export Device(s)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-You need a method to transfer encrypted submissions from the *Journalist
-Workstation* to the *Secure Viewing Station* to decrypt and view them
-(*Transfer Device*), and a method to copy them from the *Secure Viewing Station*
-to the journalist's everyday workstation in decrypted form (*Export Device*).
+Journalists need physical media (known as the *Transfer Device*) to transfer
+encrypted submissions from the *Journalist Workstation* to the
+*Secure Viewing Station*, to decrypt and view them there. If they deem a
+submission to be newsworthy, they may need physical media (known as the
+*Export Device*) to copy it to their everyday workstation.
 
 Our standard recommendation is to use USB drives, in combination with
 volume-level encryption and careful data hygiene. Our documentation, including
 the :doc:`journalist guide <journalist>`, is based on this approach. We also
-urge you to consider using a printer or similar analog conversions to
-export documents from the *Secure Viewing Station*, whenever possible.
+urge the use of a secure printer or similar analog conversions to export
+documents from the *Secure Viewing Station*, whenever possible.
 
 You may want to consider enforcing write protection on USB drives when only read
 access is needed, or you may want to implement a workflow based on CD-Rs or
