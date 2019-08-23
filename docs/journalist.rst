@@ -480,7 +480,9 @@ If you copy files you have received via SecureDrop to your everyday workstation
 and open them there in their original form, the risks from malware are
 significantly greater. SecureDrop does not scan for or remove malware, and your
 everyday workstation likely has a much greater `attack surface <https://en.wikipedia.org/wiki/Attack_surface>`__
-than the *Secure Viewing Station*.
+than the *Secure Viewing Station*. Malware running on your everyday workstation
+could exfiltrate information to a remote server, destroy data, or attempt to
+spread itself to other computers in your corporate network.
 
 Instead of exporting files in digital form, print them whenever possible. Printing
 essentially neutralizes malware, and it has the additional benefit of removing
