@@ -91,8 +91,9 @@ persistent volume of the Admin Live USB.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As noted in the :doc:`setup guide <set_up_transfer_and_export_device>`,
-we recommend using encrypted USB drives for transferring files to and from the
-*Secure Viewing Station*.
+we recommend using encrypted USB drives for transferring files to the
+*Secure Viewing Station*, and for exporting them from the *SVS* in situations
+where using a secure printer or a similar analog conversion is not an option.
 
 For every copy operation, the user will need to enter the USB drive's encryption
 passphrase at least twice (on the computer they're copying from, and on the
