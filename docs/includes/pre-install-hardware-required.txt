@@ -2,8 +2,9 @@
 * Mouse, keyboard, monitor (and necessary dongle or adapter) for
   installing the servers.
 * Dedicated physical computers for the *Admin Workstation*, *Journalist
-  Workstation*, and *Secure Viewing Station* that can boot to Tails. At
-  *minimum* this is 2 computers.
+  Workstation*, and *Secure Viewing Station* that can boot to Tails.  At
+  *minimum* this is 2 computers (a combined *Admin/Journalist Workstation* and
+  a *Secure Viewing Station*).
 * Dedicated airgapped hardware for the mouse, keyboard, and monitor (only if you
   are using a desktop for the *Secure Viewing Station*).
 * Network firewall.
