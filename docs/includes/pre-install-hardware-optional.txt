@@ -3,8 +3,7 @@
 * an external hard drive to expand the storage capacity of the
   *Secure Viewing Station*.
 * an external hard drive for server backups.
-* a USB drive to store backups of some or all of your Tails workstation drives,
-  depending on your backup strategy.
+* a USB drive to store :ref:`backups of your Tails workstation drives <backup_workstations>`.
 * a network switch, if you use a firewall with fewer than four ports.
 * a hardware token for HOTP authentication, such as a YubiKey, if you want to
   use hardware-based two-factor authentication instead of a mobile app.
