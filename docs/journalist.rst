@@ -468,67 +468,71 @@ choose **Wipe** to delete them.
 
 Risks From Malware
 ~~~~~~~~~~~~~~~~~~
+SecureDrop does not scan for or remove malware in submissions you receive. There
+are important steps you can take to protect yourself:
 
-As long as you are using the latest version of Tails on your *Secure Viewing Station*,
-you can open submitted documents with a low risk of malicious files compromising
-it. Tails only preserves changes to your persistent volume across reboots,
-making it difficult for malware to take hold. The air-gap prevents malware
-from "phoning home". Keeping your *Secure Viewing Station* up-to-date is the
-single best way to protect its security.
+1. **Keep the version of Tails on your Secure Viewing Station up-to-date.**
 
-If you copy files you have received via SecureDrop to your everyday workstation
-and open them there in their original form, the risks from malware are
-significantly greater. SecureDrop does not scan for or remove malware, and your
-everyday workstation likely has a much greater `attack surface <https://en.wikipedia.org/wiki/Attack_surface>`__
-than the *Secure Viewing Station*. Malware running on your everyday workstation
-could exfiltrate information to a remote server, destroy data, or attempt to
-spread itself to other computers in your corporate network.
+   Tails offers more protection against compromise than your everyday computer,
+   and the air-gap prevents potential malware from "phoning home." But if the
+   version of Tails is outdated, an attacker can still attempt to exfiltrate
+   or destroy information.
+   |br| |br|
 
-Instead of exporting files in digital form, print them whenever possible. Printing
-essentially neutralizes malware, and it has the additional benefit of removing
-embedded metadata. Printing a document may, however, preserve watermarks,
-printer codes, steganographically encoded data, or other information
-not visible to the naked eye.
+2. **Print documents from the Secure Viewing Station instead of exporting them
+   digitally, whenever possible.**
 
-If you must copy files in digital form (e.g., because of the quantity of
-information or the format), we recommend consulting with your administrator or
-your digital security staff before the export. Fully mitigating the risks of
-malware is beyond the scope of this documentation.
+   Printing documents prevents the proliferation of malware to your everyday
+   workstation, and eliminates most categories of embedded metadata. Note that
+   printing a document may still preserve watermarks, printer codes,
+   steganographically encoded data, or other information not visible to the
+   naked eye.
+   |br| |br|
 
-.. tip::
+3. **Consult with your administrator or your digital security staff before
+   copying files digitally.**
 
-  Tails provides both graphical and command-line utilities that can be used to
-  convert files across formats (e.g., PDF to PNG). This can be a good way to
-  dramatically reduce the risk of malware, especially when converting to the
-  simplest possible format that can hold the information you need.
+   If you must copy a file in digital form (because of its format, the volume
+   of information, or for other reasons), we recommend taking the time to
+   consult with technical experts within the organization.
 
-Risks From QR Codes and Links
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   .. tip::
 
-`Never scan QR codes`_ from the *Secure Viewing Station* using a network
-connected device. QR codes can contain links that your connected device
-will automatically visit. In general, you should take care when opening any
-links provided in a SecureDrop submission, as this can leak information to third
-parties. If you are unsure if a link is safe to click, you should consult your
-digital security staff or Freedom of the Press Foundation for assistance.
+      Converting files to simpler formats (e.g., PDF to PNG) can help reduce the
+      risk of malware. Tails provides both graphical and command-line utilities
+      that can be used for this purpose.
 
+4. **Never scan QR codes embedded in documents using a network-connected
+   device.**
 
-.. _`Never scan QR codes`: https://securedrop.org/news/security-advisory-do-not-scan-qr-codes-submitted-through-securedrop-connected-devices
+   `QR codes can contain malicious links`_ that your device will automatically visit.
+   In general, be careful when opening any links provided in a SecureDrop
+   submission, as this can leak information to third parties. If you are unsure
+   if a link is safe to click, you should consult internally, or contact
+   Freedom of the Press Foundation for assistance.
+   |br| |br|
+
+5. **Don't photograph submissions using your smartphone, and be careful with all
+   digital photography**.
+
+   Many smartphones are configured to back up photographs to cloud services,
+   immediately or intermittently; newer digital cameras have similar
+   functionality. Not all backup settings may be visible to you.
+
+   Any digital photograph will include certain metadata by default, which may
+   reveal sensitive information about your SecureDrop usage patterns
+   (potentially including GPS coordinates) to anyone who gains access
+   to the file.
+
+Fully mitigating the risks of malware received via SecureDrop is beyond the
+scope of this documentation. If you have questions, you can contact us at
+securedrop@freedom.press (`GPG encrypted <https://securedrop.org/sites/default/files/fpf-email.asc>`__)
+or via the `support portal <https://support.freedom.press/>`__. Please do **NOT**
+disclose details about the contents of any submission you have received.
+
+.. _`QR codes can contain malicious links`: https://securedrop.org/news/security-advisory-do-not-scan-qr-codes-submitted-through-securedrop-connected-devices
 .. _`working with sensitive documents`: https://tails.boum.org/doc/sensitive_documents/index.en.html
 .. _`Metadata Anonymisation Toolkit`: https://mat.boum.org/
-
-Risks From Digital Photography
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-It may be tempting to use your smartphone to photograph a submission, in order
-to share it with another journalist for quick review. Please note that many
-smartphones are configured to back up photographs to cloud services, immediately
-or intermittently. Not all backup settings may be visible to you.
-
-Moreover, any digital photograph will include certain metadata
-by default, which may reveal sensitive information about your SecureDrop
-usage patterns (potentially including GPS coordinates) to anyone who gains access
-to the file.
 
 Moving Documents to Your Everyday Workstation
 ---------------------------------------------
@@ -642,3 +646,6 @@ audio, and begin publishing important, high-impact work!
 .. |Unlock VeraCrypt in Tails 2| image:: images/manual/unlock-veracrypt-in-tails-2.png
 .. |Unlock VeraCrypt in Tails 3| image:: images/manual/unlock-veracrypt-in-tails-3.png
 .. |Unlock VeraCrypt in Tails 4| image:: images/manual/unlock-veracrypt-in-tails-4.png
+.. |br| raw:: html
+
+    <br>

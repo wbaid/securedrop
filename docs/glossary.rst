@@ -150,8 +150,8 @@ authentication for devices. We recommend using one of:
 Transfer Device
 ---------------
 The *Transfer Device* is the physical media (e.g., designated USB drive) used
-to  transfer encrypted documents from the *Journalist Workstation* to the
-*Secure Viewing Station*. Both computers run the Tails operating system
+to transfer encrypted documents from the *Journalist Workstation* to the
+*Secure Viewing Station*, where they can be decrypted.
 
 Please see the detailed security recommendations for the choice, configuration
 and use of your *Transfer Device* in the :doc:`journalist guide <journalist>`
