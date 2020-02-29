@@ -20,6 +20,24 @@ from source_app.utils import (logged_in, generate_unique_codename,
 from source_app.forms import LoginForm
 
 
+# --- BEGIN PROTOTYPE ---
+class OverrideDict(dict):
+    '''Just like a dictionary, but returns the value of `key` if missing
+    from the dictionary's entries.
+
+    '''
+
+    __missing__ = lambda self, key: key
+
+
+# In a serious implementation, this dictionary would be populated from a JSON
+# column in the `instance_config` table.
+local_words = OverrideDict()
+local_words['journalists'] = 'lawyers'
+
+# --- END PROTOTYPE ---
+
+
 def make_blueprint(config):
     view = Blueprint('main', __name__)
 
@@ -48,7 +66,7 @@ def make_blueprint(config):
         session['codenames'] = codenames
 
         session['new_user'] = True
-        return render_template('generate.html', codename=codename, tab_id=tab_id)
+        return render_template('generate.html', codename=codename, local_words=local_words, tab_id=tab_id)
 
     @view.route('/org-logo')
     def select_logo():

@@ -1058,6 +1058,15 @@ msgstr ""
 "mensajes de nuestros periodistas en respuesta a lo que usted envíe en la "
 "siguiente pantalla."
 
+#: source_templates/generate.html:10
+msgid ""
+"This codename is what you will use in future visits to receive messages from "
+"our lawyers in response to what you submit on the next screen."
+msgstr ""
+"Este nombre clave es el que usted usará en futuras visitas para recibir "
+"mensajes de nuestros abogados en respuesta a lo que usted envíe en la "
+"siguiente pantalla."
+
 #: source_templates/generate.html:34
 msgid ""
 "Because we do not track users of our <strong>SecureDrop</strong>\n"
