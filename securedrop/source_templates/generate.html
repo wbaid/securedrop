@@ -40,7 +40,8 @@
   <input name="csrf_token" type="hidden" value="{{ csrf_token() }}">
   <input name="tab_id" type="hidden" value="{{ tab_id }}">
   <button type="submit" class="btn--space pull-right" id="continue-button">
-     {{ gettext('SUBMIT DOCUMENTS') }}
+	  {% if allow_document_uploads %}{{ gettext('SUBMIT DOCUMENTS') }}
+	  {% else %}{{ gettext('SUBMIT MESSAGES') }}{% endif %}
   </button>
 </form>
 {% endblock %}

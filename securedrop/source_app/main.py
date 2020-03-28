@@ -48,7 +48,10 @@ def make_blueprint(config):
         session['codenames'] = codenames
 
         session['new_user'] = True
-        return render_template('generate.html', codename=codename, tab_id=tab_id)
+        return render_template('generate.html',
+                               allow_document_uploads=current_app.instance_config.allow_document_uploads,
+                               codename=codename,
+                               tab_id=tab_id)
 
     @view.route('/org-logo')
     def select_logo():
